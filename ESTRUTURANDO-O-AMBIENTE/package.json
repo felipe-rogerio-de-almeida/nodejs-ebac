@@ -1,0 +1,19 @@
+{
+  "name": "estruturando-o-ambiente",
+  "version": "0.0.1",
+  "description": "Um repositório de introdução a Node.JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./app.js"
+  },
+  "author": "Felipe Rogerio",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
