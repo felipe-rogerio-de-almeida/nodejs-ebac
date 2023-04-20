@@ -4,6 +4,7 @@ const path = require('path');
 const routerPrincipal = require('./routes/principal');
 const routerPedidos = require('./routes/pedidos');
 const routerPerfil = require('./routes/perfil');
+const {connect} = require('./models')
 
 const app = express();
 const porta = 3000;
@@ -19,6 +20,7 @@ app.use('/pedidos', routerPedidos);
 app.use('/', routerPrincipal);
 
 app.listen(porta,() => {
+    connect();
     console.log(`Servidor ouvindo na porta ${porta}`);
 
 });

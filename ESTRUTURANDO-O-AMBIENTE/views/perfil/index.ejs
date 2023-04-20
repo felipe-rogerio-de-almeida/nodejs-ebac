@@ -1,2 +1,4 @@
-<p> <%= nomeCompleto%></p>
-<p> <%= idade%> anos </p>
+<% pessoa.map((pessoa) =>{ %>
+    <p>O dono desse perfil é <%= pessoa.nome %></p>    
+    <p><%= pessoa.idade %> </p>
+<% }) %> 
