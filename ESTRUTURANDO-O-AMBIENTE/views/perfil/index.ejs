@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="./style/perfil.css" type="text/css">
-<% pessoa.map((pessoa) =>{ %>
-    <p>O dono desse perfil é <span class="degrade"><%= pessoa.nome %></span></p>    
-    <p> de <span class="degrade"><%= pessoa.idade %></span> anos </p>
-<% }) %> 
+
+<p>O dono desse perfil é <span class="degrade"><%= pessoa[0].nome %></span></p>    
+<p> de <span class="degrade"><%= pessoa[0].idade %></span> anos </p>
