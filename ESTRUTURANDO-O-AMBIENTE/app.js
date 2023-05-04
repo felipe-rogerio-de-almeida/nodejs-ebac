@@ -24,3 +24,5 @@ app.listen(porta,() => {
     console.log(`Servidor ouvindo na porta ${porta}`);
 
 });
+
+app.use(express.static("public"));

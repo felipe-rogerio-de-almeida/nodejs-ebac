@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    color: #ffffff;
+    background-color: #121212;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 22px;
+}
+
+
+
+.degrade{
+    margin: 0;
+    text-align: center;
+    background: linear-gradient(to right, #fff 20%,#00FFF5 40%, #00ADB5 60%, #fff 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate{
+    to{
+        background-position: 200% center;
+    }
+}
